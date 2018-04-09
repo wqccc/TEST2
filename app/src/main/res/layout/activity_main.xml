@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+tools:context="com.example.bupt.ex7.MainActivity">
+
+<Button
+    android:id="@+id/main_btn_login"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="login"
+    android:layout_marginStart="56dp"
+    app:layout_constraintBaseline_toBaselineOf="@+id/main_btn_help"
+    tools:layout_constraintBaseline_creator="1"
+    tools:layout_constraintLeft_creator="1"
+    app:layout_constraintLeft_toLeftOf="parent" />
+
+<Button
+    android:id="@+id/main_btn_help"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Help"
+    tools:layout_constraintTop_creator="1"
+    android:layout_marginStart="33dp"
+    android:layout_marginTop="176dp"
+    tools:layout_constraintLeft_creator="1"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintLeft_toRightOf="@+id/main_btn_login" />
+
+</android.support.constraint.ConstraintLayout>
